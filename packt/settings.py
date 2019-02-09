@@ -14,6 +14,9 @@ BOT_NAME = 'packt'
 SPIDER_MODULES = ['packt.spiders']
 NEWSPIDER_MODULE = 'packt.spiders'
 
+EMAIL = 'your@email.com'
+PASSWORD = 'yourpassword'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
 
@@ -28,8 +31,8 @@ ROBOTSTXT_OBEY = False
 # See also autothrottle settings and docs
 #DOWNLOAD_DELAY = 2
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 4
-CONCURRENT_REQUESTS_PER_IP = 4
+CONCURRENT_REQUESTS_PER_DOMAIN = 2
+CONCURRENT_REQUESTS_PER_IP = 2
 
 # Disable cookies (enabled by default)
 COOKIES_ENABLED = True
@@ -96,4 +99,5 @@ DEPTH_STATS_VERBOSE = True
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 LOG_LEVEL = 'DEBUG'
+DOWNLOAD_TIMEOUT=1800
 
